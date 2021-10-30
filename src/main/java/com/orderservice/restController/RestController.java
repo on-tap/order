@@ -21,7 +21,6 @@ public class RestController {
 
     @GetMapping("/{id}")
     public Order getById(@PathVariable Long id){
-        System.out.println("1");
         return repository.findById(id).get();
     }
 
